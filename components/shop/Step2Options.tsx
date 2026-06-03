@@ -194,7 +194,7 @@ export default function Step2Options({
         </button>
         <button
           onClick={onNext}
-          className="font-ahn-bold text-[17px] px-10 py-4 transition-opacity hover:opacity-80"
+          className="font-paperlogy-medium text-[17px] px-10 py-4 transition-opacity hover:opacity-80"
           style={{
             background: `linear-gradient(to bottom, ${COLORS.cardBg}, ${COLORS.lime})`,
             border: `1.5px solid ${COLORS.outline}`,

@@ -117,9 +117,12 @@ export default function PlantModal({ plant, onClose }: PlantModalProps) {
                   {plant.name}
                 </h2>
                 {/* paperlogy-regular → 12px */}
-                <p className="text-[12px]" style={{ color: COLORS.green }}>
-                  {plant.tagline}
-                </p>
+                <div className="flex items-center gap-2">
+                  <div style={{ width: 1.5, height: 16, background: COLORS.green, borderRadius: 2, flexShrink: 0 }} />
+                  <p className="font-paperlogy-medium text-[12px]" style={{ color: COLORS.green, lineHeight: '5px' }}>
+                    {plant.tagline}
+                  </p>
+                </div>
               </div>
             </div>
 
@@ -138,7 +141,7 @@ export default function PlantModal({ plant, onClose }: PlantModalProps) {
                   ${COLORS.outline}18 25px,
                   ${COLORS.outline}18 26px
                 )`,
-                backgroundPositionY: '10px',
+                backgroundPositionY: '1px',
               }}
             >
               {/* 수신인 */}
@@ -192,14 +195,14 @@ export default function PlantModal({ plant, onClose }: PlantModalProps) {
                       <ScoreStars score={data.score} />
                     </div>
                     {/* paperlogy-regular → 12px */}
-                    <p className="text-[12px]" style={{ color: '#5a6352' }}>{data.description}</p>
+                    <p className="text-[12px] whitespace-pre-line" style={{ color: '#5a6352' }}>{data.description}</p>
                   </div>
                 ))}
               </div>
               <div className="flex flex-wrap gap-3">
                 {/* 뱃지 — paperlogy-medium 13px */}
                 <span
-                  className="flex items-center gap-2 px-4 py-2 font-paperlogy-medium text-[13px]"
+                  className="flex items-center gap-2 px-4 py-2 font-paperlogy-medium text-[12px]"
                   style={{
                     background: COLORS.cardBg,
                     border: `1.5px solid ${COLORS.outline}`,
@@ -210,7 +213,7 @@ export default function PlantModal({ plant, onClose }: PlantModalProps) {
                   ⭐ 난이도: {plant.suitability.difficultyLabel}
                 </span>
                 <span
-                  className="flex items-center gap-2 px-4 py-2 font-paperlogy-medium text-[13px]"
+                  className="flex items-center gap-2 px-4 py-2 font-paperlogy-regular text-[12px]"
                   style={{
                     background: COLORS.cardBg,
                     border: `1.5px solid ${COLORS.outline}`,

@@ -327,7 +327,7 @@ export default function Step3OrderForm({
       {/* 주문하기 버튼 */}
       <button
         onClick={isValid ? onSubmit : undefined}
-        className="font-ahn-bold text-[18px] w-full py-5 transition-opacity"
+        className="font-paperlogy-medium text-[18px] w-full py-5 transition-opacity"
         style={{
           background: `linear-gradient(to bottom, ${COLORS.cardBg}, ${COLORS.lime})`,
           border: `1.5px solid ${COLORS.outline}`,

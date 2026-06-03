@@ -104,7 +104,7 @@ export default function OrderSummary({
       {step === 3 && (
         <button
           onClick={isSubmitValid ? onSubmit : undefined}
-          className="font-ahn-bold text-[16px] w-full py-4 transition-opacity"
+          className="font-paperlogy-medium text-[16px] w-full py-4 transition-opacity"
           style={{
             background: `linear-gradient(to bottom, ${COLORS.cardBg}, ${COLORS.lime})`,
             border: `1.5px solid ${COLORS.outline}`,

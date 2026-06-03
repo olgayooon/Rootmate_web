@@ -75,7 +75,7 @@ export default function GiftSection() {
               className="font-ahn-bold text-[23px] lg:text-[25px]"
               style={{ color: COLORS.text }}
             >
-              룸메이트를 선물해요
+              룻메이트를 선물해요
             </h3>
             <div className="flex flex-col gap-3">
               {['🌱 씨앗 봉투', '🪴 화분 & 흙', '📱 앱 연동 코드', '💌 메시지 카드'].map((item) => (

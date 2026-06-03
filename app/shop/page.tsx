@@ -170,7 +170,7 @@ export default function ShopPage() {
                 씨앗 키트 주문하기
               </h1>
               <p className="text-[16px] mt-3" style={{ color: COLORS.green }}>
-                식물을 선택하고, 나만의 룸메이트를 만나요
+                식물을 선택하고, 나만의 룻메이트를 만나요
               </p>
             </div>
             <StepIndicator currentStep={order.step} />

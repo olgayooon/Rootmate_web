@@ -86,7 +86,7 @@ export default function Step1PlantSelect({ selectedPlant, onSelect, onNext }: St
 
               {/* 한 줄 소개 */}
               <p
-                className="text-[14px] leading-relaxed"
+                className="text-[13px] leading-relaxed whitespace-pre-line"
                 style={{
                   color: COLORS.green,
                   display: '-webkit-box',
@@ -107,7 +107,7 @@ export default function Step1PlantSelect({ selectedPlant, onSelect, onNext }: St
         <button
           onClick={onNext}
           disabled={!selectedPlant}
-          className="font-ahn-bold text-[17px] px-10 py-4 transition-all duration-200"
+          className="font-paperlogy-medium text-[17px] px-10 py-4 transition-all duration-200"
           style={{
             background: selectedPlant
               ? `linear-gradient(to bottom, ${COLORS.cardBg}, ${COLORS.lime})`

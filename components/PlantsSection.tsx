@@ -27,12 +27,6 @@ function ScoreRow({ icon, label, score }: { icon: string; label: string; score: 
 function PlantCard({ plant, onOpen, delay }: { plant: PlantData; onOpen: () => void; delay: number }) {
   const [hovered, setHovered] = useState(false);
 
-  const speechMap: Record<string, string> = {
-    basil: '"흙 한번 만져봐. 말랐으면 물 좀 줘."',
-    tomato: '"물 한 잔이면 오늘도 쑥쑥 자랄 수 있어! (◍\'ᗜ\'◍)"',
-    tulip: '"당신의 하루도 꽃처럼 피어나길 바라요. 🌷"',
-  };
-
   return (
     <motion.div
       className="flex flex-col gap-5 p-8 lg:p-10 cursor-pointer transition-colors duration-300"
@@ -98,20 +92,6 @@ function PlantCard({ plant, onOpen, delay }: { plant: PlantData; onOpen: () => v
         </span>
       </div>
 
-      {/* 말풍선 */}
-      <div
-        className="text-[14px] leading-relaxed px-4 py-3"
-        style={{
-          background: hovered ? 'rgba(255,255,255,0.6)' : COLORS.cardBg,
-          border: `1.5px solid ${COLORS.outline}`,
-          borderRadius: 16,
-          color: COLORS.green,
-          transition: 'background 0.3s',
-        }}
-      >
-        {speechMap[plant.id]}
-      </div>
-
       {/* 자세히 보기 버튼 — mt-auto로 카드 하단 고정 */}
       <button
         onClick={onOpen}
@@ -124,7 +104,7 @@ function PlantCard({ plant, onOpen, delay }: { plant: PlantData; onOpen: () => v
           cursor: 'pointer',
         }}
       >
-        자세히 보기 →
+        자세히 보기
       </button>
     </motion.div>
   );
@@ -148,7 +128,7 @@ export default function PlantsSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
           >
-            나의 룸메이트를 선택해요
+            나의 룻메이트를 선택해요
           </motion.h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

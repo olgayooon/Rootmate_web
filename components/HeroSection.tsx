@@ -53,7 +53,7 @@ export default function HeroSection() {
             >
               키트 구매하기
             </Link>
-            {/* 나의 룸메이트 선택하기 — #plants 섹션으로 스크롤 */}
+            {/* 나의 룻메이트 선택하기 — #plants 섹션으로 스크롤 */}
             <button
               onClick={scrollToAbout}
               className="font-paperlogy-medium text-[16px] lg:text-[17px] px-10 py-4 transition-opacity hover:opacity-80"
@@ -65,7 +65,7 @@ export default function HeroSection() {
                 cursor: 'pointer',
               }}
             >
-              나의 룸메이트 선택하기
+              나의 룻메이트 선택하기
             </button>
           </div>
         </motion.div>
